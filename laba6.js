@@ -52,4 +52,4 @@ function showAlert()
     let b = Math.round(Math.random()*255);
     let color = 'rgb(' + r + ',' + g + ',' + b + ')';
     document.getElementById('user-data').style.backgroundColor = color;
-};
+}
