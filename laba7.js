@@ -32,7 +32,6 @@ function showAlert() {
     let color = 'rgb(' + r + ',' + g + ',' + b + ')';
     document.getElementById('user-data').style.backgroundColor = color;
 }
-
 function makeStairs() {
     let stairs = document.querySelector('#stairs');
     let stepCount = 20;
@@ -45,5 +44,21 @@ function makeStairs() {
         steps[i].style.left = (30 + 10*i) + 'px';
         steps[i].style.top = (300 + 80*i) + 'px';
         steps[i].innerHTML = 'Блок номер' + i;
+    }
+}
+function Makesnowing() {
+    let snegopadius = document.querySelector('#snegopadius');
+    let stepCount = 50;
+    for (let i = 0; i<stepCount; i++) {
+        snegopadius.innerHTML += '<img class="snezhinki" src="https://w7.pngwing.com/pngs/726/191/png-transparent-snowflake-snowflake-white-winter-symmetry-thumbnail.png">';
+    }
+    let snezhinki = document.querySelectorAll('.snezhinki');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
+
+    for (let i = 0; i<snezhinki.length; i++) {
+        snezhinki[i].style.left = Math.random() * (screenWidth-50) + 'px';
+        snezhinki[i].style.top = Math.random() * (screenHeight-50) + 'px';
+        snezhinki[i].style.width = Math.random() * 100 + 'px';
     }
 }
