@@ -11,3 +11,11 @@ function clickMe(button) {
     else
         button.innerHTML = 'Имя Артур'
 }
+
+function clickMe(button){
+    if(button.innerHTML = 'Щелчок')
+        button.innerHTML = 'Фамилия Тимошенский'
+    else
+        button.innerHTML = 'Имя Александр'    
+}
+
