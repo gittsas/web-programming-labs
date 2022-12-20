@@ -51,3 +51,12 @@ window.addEventListener('DOMContentLoaded', function() {
     let coords = document.querySelector('#coords');
     coords.addEventListener('mousemove', showCoords);
 });
+
+function showOne(tag) {
+    tag.style.color = "red"
+
+    if(tag.style.color = "red")
+        span.style.fontsize = "25px";
+    else
+        ag.style.color = "red"
+}
